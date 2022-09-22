@@ -1,0 +1,180 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+html {
+			cursor: url(正常选择.cur), pointer;
+		}
+.nav {      cursor: url(文本选择.cur), pointer;
+	
+}
+body {background-image:url(https://img-blog.csdnimg.cn/20200804141524517.jpg);
+    	      background-repeat:no repeat;
+    	      background-size:cover;
+    			   }
+				   
+img {
+	vertical-align:middle;	
+}
+
+input {
+	outline:none;
+	border:none;		
+}
+
+a {
+		 font-size: 20px;
+		color: #0099ff;
+		text-decoration: none;
+		transition: color 1s 0s;
+		position: relative;
+		margin: 0 auto; text-align:center;
+		cursor: url(链接选择.cur), pointer;
+			
+}
+        
+a::before {
+		    content: '';
+		    position: absolute;
+		    background: #a2d9ff;
+		    width: 100%;
+		    height: 40%;
+		    bottom: 0;
+		    z-index: -1;
+		    transform: scaleY(0.25);
+		    transform-origin: center bottom;
+		    transition: transform 500ms 0s, background 500ms 0s;
+			cursor: url(链接选择.cur), pointer;
+}
+		
+a:hover::before {
+		    height: 100%;
+		    transform: none;
+			cursor: url(链接选择.cur), pointer;
+			
+}
+
+ul,ol {
+	list-style:none;
+	
+}
+
+/*公共*/
+.bancen {
+			width:1102px;
+			margin:0 auto;
+			
+}
+
+.logo {
+	height:100px;
+	
+	background-color:transparent;
+}
+
+.layoutnav {
+	height:300px;
+	width:40%;
+	
+	background-color:#00cba9;
+}
+
+.nav {
+	background-color:orange;
+}
+
+.nav > li{
+	line-height: 40px;
+	font-family:楷体;
+	padding: 0px 32px;
+	box-sizing:border-box;
+	font-size:20px;
+	color:lightyellow;
+	
+}
+.nav > li:hover{
+	font-size:25px;
+}
+.nav > img{
+	width: 200px;
+	height: 300px;
+	margin-top:0px;
+	float:left;
+}
+
+.content{
+	height:250px;
+	background-color: orangered;
+	margin-bottom: 40px;
+}
+
+.content > div {
+	height: 250px;
+	float: left;
+}
+
+.content > .board1 {
+	width: 600px;
+	background-color: skyblue;
+	margin-right: 0px;
+	
+	
+}
+
+.content > .board2 {
+	width: 502px;
+	background-color: mediumpurple;
+	
+}
+
+.content > .board1 > .ptit {
+	padding:37px 0px 29px;
+	color:blue;
+	font-family:宋体;
+	font-size:22px;
+	
+}
+
+.content > .board1 > ul {
+	font-size:16px;
+	line-height:24px;
+	color:black;
+	font-family:楷体
+}
+
+.content > .board1 > ul:hover{
+	font-size:20px;
+}
+
+.content > .board1 > ul span{
+	float:right;
+	
+}
+.content > .board2 > .title {
+	padding: 37px 0px 30px 26px;
+	color:yellow;
+	font-size:22px;
+	font-family:宋体;
+}
+.content > .board2 > .textarea {
+	padding: 0px 42px 29px 26px;
+	font-size:20px;
+	line-height: 24px;
+	font-family:楷体;
+	
+}
+
+.bottom {
+	background-color: #101c23;
+	height:129px;
+	text-align:center;
+	color: #9a9c91;
+	font-size:14px;
+	line-height: 14px;
+}
+
+.bottom > .text1 {
+	padding-top: 45px;
+	
+}
